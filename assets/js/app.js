@@ -104,7 +104,7 @@ const creatCol = (arr) => {
     cl(arr)
     arr.forEach(movie => {
         result += `
-                 <div class="col-3 mb-4" id="${movie.id}">
+                 <div class="col-md-3 col-sm-12 mb-4" id="${movie.id}">
                 <div class="card movie-card text-white">
                     <div class="card-header">
                         <div class="row">
@@ -174,7 +174,7 @@ function onsubmitEvent(eve) {
 
             let Divs = document.createElement("div");
             Divs.id = data.id;
-            Divs.className = "col-3 mb-4";
+            Divs.className = "col-md-3 col-sm-12 mb-4";
             Divs.innerHTML = `
                      <div class="card movie-card text-white">
                     <div class="card-header">
